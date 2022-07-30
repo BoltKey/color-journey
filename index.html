@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Journey</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="allColors.js"></script>
+	<script src="main.js"></script>
+    <div class="canvas-wrap">
+        <canvas height="1000" width="1000"></canvas>
+    </div>
+    <div class="explanation">
+        <h1>What is this?</h1>
+        <p>
+            This tool/toy/demo is a way to navigate all 16 777 216 colors in the RGB color space. 
+            You are navigating a 256x256x256 cube, and based on your position, the background color is calculated.
+            You can navigate the space just like you would navigate any 3D space in a videogame.
+            Move your mouse to look around and use wasd to walk. You can also press E to go up, and Q to go down, and hold shift to move 5 times faster.
+            Essentially, the more west you are, the more red you add. The more south you are, the more green you have. 
+            And the higher you are, the more blue component is in the color.
+        </p>
+        <h2>Why does this have to be so complicated? Can't you just display all the colors in a 2D image?</h2>
+        <p>Well, colors are 3 dimensional. Most of the color representations have 3 components (like RGB, HSL or HSV).
+        A picture is just 2D, so it is not really possible to nicely show a 3 dimensional entity such as color in it.
+        </p>
+        <h2>What are those floating texts all around?</h2>
+        Some of the over 16 million colors have names (such as "red", "turquoise" or "cerise"). 
+        For this project, I used a list of 2330 color names that I found here: <a href="https://github.com/jonathantneal/color-names">
+            https://github.com/jonathantneal/color-names
+        </a>. The color name not only is in the color it describes, but is at precisely the point in space where it matches its color. When you reach a certain color name, the background will have the corresponding color.
+        <br>
+        <p>
+        This page is best viewed on desktop Chrome. It probably won't be operable on mobile browsers, and probably will be slow on Safari.
+        </p>
+    </div>
+  </body>
+</html>

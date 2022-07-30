@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+canvas {
+
+}
+
+.explanation {
+    margin: 20px;
+}
+
+.canvas-wrap {
+    display: flex;
+    justify-content: space-around;
+}
