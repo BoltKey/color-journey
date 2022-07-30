@@ -3,9 +3,12 @@ body {
     font-family: system-ui;
 }
 
-canvas {
-
+.ribbon {
+    position: absolute;
+    top:0;
+    left:0;
 }
+
 
 .explanation {
     margin: 20px;
